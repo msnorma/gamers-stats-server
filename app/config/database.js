@@ -4,6 +4,7 @@ import { API } from '../globals.js'
 
 export default function connect() {
   // Connecting to the database
+  console.log(API.DB_URI)
   mongoose
     .connect(API.DB_URI, {
       useNewUrlParser: true,
