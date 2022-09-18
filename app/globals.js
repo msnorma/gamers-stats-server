@@ -3,6 +3,7 @@ dotenv.config()
 
 const API = {
   PORT: process.env.PORT || 2000,
+  DB_URI: process.env.DB_URI
 }
 
 const HTTP_CODES = {
