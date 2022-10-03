@@ -7,6 +7,7 @@ import { API } from './app/globals.js'
 import logger from './app/helpers/logger.js'
 
 import userRoutes from './app/routes/user.routes.js'
+import postRoutes from './app/routes/post.routes.js'
 
 mongo()
 const app = express()
@@ -32,3 +33,4 @@ app.listen(port, () => {
 })
 
 app.use("/api/user", userRoutes)
+app.use("/api/post", postRoutes)
